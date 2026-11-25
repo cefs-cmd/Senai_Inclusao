@@ -1,0 +1,372 @@
+    /* mudando a tela principal para responsivo  */
+   body {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100svh;
+
+    font-family: Arial, sans-serif;
+    background-color: #F0F4F8;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+    /*mudando para o formato mobile*/
+form{
+    background-color: #EEF4F8;
+    padding : 2px;
+    box-shadow: 0 0 20px color: green;
+    width: 390px;
+    height: 1136px;
+}
+
+a{
+ text-decoration: none;
+}
+
+ /* Cabeçalho para ficar alinhado um ao lado do outro*/
+    .cabecalho {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 20px 12px;
+    }
+
+    /* Logo */
+    .logo {
+        display: flex;
+        flex-direction: column;
+
+        color: #174b9b;
+        font-size: 23px;
+        font-weight: 900;
+        font-style: italic;
+        line-height: 0.85;
+        letter-spacing: -1px;
+    }
+
+    /* Botões alinhados a direita */
+    .botoes-acessibilidade {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+    }
+ /* Botões alinhados centralizados e com seus backgrounds em volta*/
+    .botao-icone {
+        width: 37px;
+        height: 37px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: #005bbb;
+        color: white;
+
+        border: 1px solid #E2E8F0;
+        border-radius: 11px;
+
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+
+    /* Cabeçalho azul */
+.boas-vindas {
+    background-color: #0056B3;
+    color: white;
+
+    padding: 28px 32px 18px;
+    border-radius: 0 0 24px 24px;
+}
+/* Botões alinhados a direita */
+.boas-vindas p {
+    font-size: 14px;
+    margin: 1px 0 4px;
+    color: #E2E8F0;
+}
+/* Mudança de cor e posição do texto */
+.boas-vindas h1 {
+    font-size: 30px;
+    margin: 0 0 4px;
+    color: white;
+}
+/* Mudança da posição do texto */
+.boas-vindas strong {
+    font-size: 16px;
+    margin-left: 3px;
+}
+
+/* Área de rotas */
+.conteudo-home {
+    padding: 20px 24px;
+}
+
+/* Cartão Ver Rotas */
+.cartao-rotas {
+    position: relative;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+
+    padding: 28px 18px 22px;
+    min-height: 200px;
+    box-sizing: border-box;
+
+    background-color: #eaf4fc;
+    border: 1px solid #cfe5f7;
+    border-radius: 28px;
+    overflow: hidden;
+}
+
+/* Ícone do mapa ao lado esquerdo */
+.icone-mapa {
+    width: 58px;
+    height: 58px;
+    min-width: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #EAF4FC;
+    border-radius: 50%;
+    color: #006DB6;
+
+    font-size: 30px;
+}
+
+/* textos da rota centralizada ao lado da outra */
+.informacoes-rotas h2 {
+    color: #173e5e;
+    font-size: 28px;
+    margin: -5px 0 8px;
+}
+
+.informacoes-rotas p {
+    color: #456987;
+    font-size: 17px;
+    line-height: 1.4;
+    margin: 0 0 22px;
+}
+
+/* Botão Acessar Rotas */
+.botao-rotas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+
+    background-color: white;
+    color: #006cba;
+
+    border: 2px solid #006DB6;
+    border-radius: 40px;
+
+    font-weight: bold;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+/* Centralização dos demais grupos de boas vindas e cartão de rotas */
+
+    .boas-vindas {
+        padding-left: 22px;
+        padding-right: 21px;
+    }
+
+    .cartao-rotas {
+        gap: 12px;
+        padding: 24px 14px;
+    }
+
+    .icone-mapa {
+        width: 48px;
+        height: 48px;
+        background-color: white;
+        min-width: 48px;
+        font-size: 25px;
+    }
+
+    .informacoes-rotas h2 {
+        font-size: 24px;
+    }
+
+    .informacoes-rotas p {
+        font-size: 15px;
+    }
+
+    .botao-rotas {
+        gap: 10px;
+        width: 180px;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+.interface {
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.titulo-secao {
+    color: #10233f;
+    font-size: 20px;
+    margin: 0 0 12px;
+}
+
+/* Cartão de opções do app */
+.calendario {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    width: 360px;
+    height: 100px;
+    min-height: 110px;
+    padding: 16px;
+
+    box-sizing: border-box;
+    background-color: #0757b5;
+    border-radius: 12px;
+}
+
+/* Botão dos ícones alinhados e customizados  */
+.icone-calendario {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #286fba;
+    color: white;
+    border: none;
+    border-radius: 24px;
+
+    font-size: 32px;
+    cursor: pointer;
+}
+
+/* Textos à direita do ícone*/
+.info-calendario {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+/* Textos com cor*/
+.info-calendario strong {
+    color: white;
+    font-size: 20px;
+}
+/* Textos à direita/ cor*/
+.info-calendario p {
+    color: #d0e2f8;
+    font-size: 12px;
+    margin: 0;
+}
+
+    .icone-calendario {
+        width: 64px;
+        height: 72px;
+        min-width: 70px;
+        font-size: 28px;
+    }
+
+    .info-calendario strong {
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    
+/* Área de pedir ajuda */
+.rodape-home {
+    width: 100%;
+    margin-top: 10px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+/* Botão grande de pedir ajuda */
+.botao-pedir-ajuda {
+    width: 80%;
+    max-width: 310px;
+    height: 155px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+
+    padding-bottom: 25px;
+    box-sizing: border-box;
+    margin: 0 auto 9px;
+
+    background-color: #0757b5;
+    color: white;
+
+    border: none;
+    border-radius: 160px 160px 0 0;
+
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Ícone de telefone tamanho */
+.botao-pedir-ajuda i {
+    font-size: 46px;
+}
+
+/* Barra de navegação do app */
+.menu-inferior {
+    display: grid;
+    grid-template-columns: 1fr 1.8fr 1fr;
+    align-items: center;
+
+    width: 100%;
+    min-height: 74px;
+    padding: 8px 4px;
+    box-sizing: border-box;
+    margin-top: -8px;
+
+    background-color: white;
+}
+
+/* alinhamento dos ícones de navageção */
+.item-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+
+    color: #7290ad;
+    text-decoration: none;
+    text-align: center;
+
+    font-size: 12px;
+}
+
+/* tamanho dos Ícones de navegação  */
+.item-menu i {
+    font-size: 21px;
+}
+
+/* Item selecionado cor */
+.item-menu.ativo {
+    color: #0062c4;
+}
+
+/* Evita que o texto central quebre de forma estranha (aqui foi chat) tava dando erro */
+.item-menu:nth-child(2) span {
+    white-space: nowrap;
+    font-size: 11px;
+}

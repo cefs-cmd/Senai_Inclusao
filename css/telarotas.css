@@ -1,0 +1,309 @@
+        /* mudando a tela principal para responsivo */
+   body {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100svh;
+
+    font-family: Arial, sans-serif;
+    background-color: #F0F4F8;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+    /*mudando para o formato mobile*/
+form{
+    background-color: #EEF4F8;
+    padding : 2px;
+    box-shadow: 0 0 20px color: green;
+    width: 390px;
+    height: 1020px;
+}
+
+/* Cabeçalho para ficar alinhado um ao lado do outro*/
+    .cabecalho {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 20px 12px;
+    }
+
+    /* Logo */
+    .logo {
+        display: flex;
+        flex-direction: column;
+
+        color: #174b9b;
+        font-size: 23px;
+        font-weight: 900;
+        font-style: italic;
+        line-height: 0.85;
+        letter-spacing: -1px;
+    }
+
+    /* Botões à direita */
+    .botoes-acessibilidade {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+    }
+
+    .botao-icone {
+        width: 37px;
+        height: 37px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: #005bbb;
+        color: white;
+
+        border: 1px solid #E2E8F0;
+        border-radius: 11px;
+
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+
+    }
+
+    .icone-perto{
+        gap: 12px;
+    }
+
+    .cabecalho-navegacao {
+    width: 100%;
+    min-height: 90px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    padding: 20px 16px;
+
+    background-color: #0862ad;
+    color: white;
+}
+
+.voltar {
+    color: white;
+    text-decoration: none;
+    font-size: 27px;
+    line-height: 1;
+}
+
+.cabecalho-navegacao h2 {
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.proximo {
+    margin: 12px;
+}
+
+.tamanho{
+    font-size: 17px;
+}
+
+
+.progresso {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 370px;
+    margin: 10px;
+}
+
+.linha {
+    flex: 1;
+    height: 10px;
+    box-sizing: border-box;
+
+    background-color: white;
+    border: 2px solid #0757b5;
+    border-radius: 20px;
+}
+
+.linha.preenchida {
+    background-color: #0757b5;
+    border-color: #0757b5;
+}
+
+.entrar {
+    height: 60px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    background-color: #0862ad;
+    color: white;
+
+    border: none;
+    border-radius: 9px;
+    
+    font-weight: bold;
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+.etapas {
+    height: 60px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    background-color: white;
+    border: 2px solid #0B4F9E;
+    color: #0B4F9E;
+
+    border-radius: 9px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+
+.etapa{
+    margin: 15px;
+    color: #4A4A4A;
+    gap: 12px;
+    
+}
+
+/* Área inferior da tela */
+.rodape-home {
+    width: 100%;
+    margin-top: 10px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+/* Botão grande de pedir ajuda */
+.botao-pedir-ajuda {
+    width: 80%;
+    max-width: 310px;
+    height: 155px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+
+    padding-bottom: 25px;
+    box-sizing: border-box;
+    margin: 0 auto 9px;
+
+    background-color: #0757b5;
+    color: white;
+
+    border: none;
+    border-radius: 160px 160px 0 0;
+
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Ícone de telefone */
+.botao-pedir-ajuda i {
+    font-size: 46px;
+}
+
+/* Barra branca de navegação */
+.menu-inferior {
+    display: grid;
+    grid-template-columns: 1fr 1.8fr 1fr;
+    align-items: center;
+
+    width: 100%;
+    min-height: 74px;
+    padding: 8px 4px;
+    box-sizing: border-box;
+    margin-top: -8px;
+
+    background-color: white;
+}
+
+/* Cada item da navegação */
+.item-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+
+    color: #7290ad;
+    text-decoration: none;
+    text-align: center;
+
+    font-size: 12px;
+}
+
+/* Ícones da navegação */
+.item-menu i {
+    font-size: 21px;
+}
+
+/* Item selecionado */
+.item-menu.ativo {
+    color: #0062c4;
+}
+
+/* Evita que o texto central quebre de forma estranha */
+.item-menu:nth-child(2) span {
+    white-space: nowrap;
+    font-size: 11px;
+}
+
+.cartao-instrucao {
+    padding: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+}
+
+.conteudo-instrucao {
+    min-height: 145px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 12px;
+    border: 2px solid #6B6B6B;
+    border-radius: 12px;
+    background-color: #F1F1F1;
+}
+
+.conteudo-instrucao h2 {
+    margin: 0;
+    color: #171717;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: bold;
+}
+
+.conteudo-instrucao p {
+    margin: 0;
+    color: #555555;
+    font-size: 13px;
+    line-height: 1.4;
+}
